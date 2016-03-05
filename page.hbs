@@ -1,0 +1,31 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+    <div id="main" class="row">
+        <div class="row-content buffer-left buffer-right buffer-bottom">
+            <div class="post-area clear-after">
+                <article role="main">
+                    <h1>{{title}}</h1>
+                    <section>
+                        {{content}}
+                    </section>
+                </article>
+
+            </div><!-- post-area -->
+
+            <div class="meta-social">
+                <ul class="inline center">
+                    <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a href="#" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- row-content -->
+    </div><!-- row -->
+    </main><!-- main -->
+{{/post}}
+
